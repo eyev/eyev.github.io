@@ -1,0 +1,13 @@
+.icon-branding(@brand-color: #333) { 
+	background: linear-gradient(to right, #f4f4f4 50%, @brand-color 50%);
+    background-size: 200% 100%;
+    background-position:left bottom;
+   	transition:ease-in .2s;
+}
+.hover-border(@brand-color: #333) {
+	border-top: 1px solid darken(@brand-color, 20%);
+	border-bottom: 1px solid darken(@brand-color, 20%);
+}
+.icon-border(@brand-color: #333) { 
+	border-right: 6px solid @brand-color;
+}

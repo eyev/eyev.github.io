@@ -1,0 +1,158 @@
+/* The Sidebar */
+@import "_global";
+@import "_mixins";
+aside { 
+	background-color: @brand-grey;
+	height:100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	bottom:0;
+	width: 5em;
+	text-align: center;
+	box-sizing:border-box;
+	font-family: 'Roboto', Helvetica, sans-serif;
+	font-size: .9em;
+	transition: ease-in .2s;
+	li { 
+		border-bottom: 1px solid #e6e6e6;
+		border-top: 1px solid transparent;
+		padding: 0;
+		cursor: pointer;
+		&:nth-child(2) { 
+			border-top: 1px solid #e6e6e6;
+		}
+		i { 
+			box-sizing:border-box;
+			width:100%;
+			padding: .6em 0;
+			color:#545454;
+			&.fa-bars,&.fa-close { 
+				border:none;
+			}
+		}
+		&.menu-bars { 
+			border: none;
+			background-color:#fff;
+		}
+		&.home {
+			.icon-branding(#607d8b);
+			i { .icon-border(#607d8b);}
+			&:hover { 
+				 background-position:right bottom;
+				 .hover-border(#607d8b);
+				 i { color:#f4f4f4;}
+			}
+		}		
+		&.portfolio {
+			.icon-branding(#ff6e40);
+			i { .icon-border(#ff6e40);}
+			&:hover { 
+				 background-position:right bottom;
+				 .hover-border(#ff6e40);
+				 i { color:#f4f4f4;}
+			}
+		}
+		&.experiments {
+			.icon-branding(#e91e63);
+			i { .icon-border(#e91e63); }
+			&:hover { 
+				 background-position:right bottom;
+				 .hover-border(#e91e63);
+				 i { color:#f4f4f4;}
+			}
+		}		
+		&.resume {
+			.icon-branding(#03a9f4);
+			i { .icon-border(#03a9f4); }
+			&:hover { 
+				 background-position:right bottom;
+				 .hover-border(#03a9f4);
+				 i { color:#f4f4f4;}
+			}
+		}	
+		&.contact {
+			.icon-branding(#259b24);
+			i { .icon-border(#259b24); }
+			&:hover { 
+				 background-position:right bottom;
+				 .hover-border(#259b24);
+				 i { color:#f4f4f4;}
+			}
+		}
+		&.social-sites { 
+			border: none;
+			background-color:#fff;
+		}
+		&.facebook {
+			.icon-branding(#3b5998);
+			border-top: 1px solid #e6e6e6;
+			i { .icon-border(#3b5998); }
+			&:hover { 
+				 background-position:right bottom;
+				 .hover-border(#3b5998);
+				 i { color:#f4f4f4;}
+			}
+		}					
+		&.twitter {
+			.icon-branding(#00aced);
+			i { .icon-border(#00aced); }
+			&:hover { 
+				 background-position:right bottom;
+				 .hover-border(#00aced);
+				 i { color:#f4f4f4;}
+			}
+		}
+		&.linkedin {
+			.icon-branding(#287bbc);
+			i { .icon-border(#287bbc); }
+			&:hover { 
+				 background-position:right bottom;
+				 .hover-border(#287bbc);
+				 i { color:#f4f4f4;}
+			}
+		}
+		&.github {
+			.icon-branding;
+			i { .icon-border; }
+			&:hover { 
+				 background-position:right bottom;
+				 .hover-border;
+				 i { color:#f4f4f4;}
+			}
+		}
+		&.codepen {
+			.icon-branding;
+			i { .icon-border; }
+			&:hover { 
+				 background-position:right bottom;
+				 .hover-border;
+				 i { color:#f4f4f4;}
+			}
+		}
+	}
+	&.menu-expand { 
+		width: 15em;
+		text-align:left;
+		i { 
+		padding-left: 8px;
+		}
+		i:after { 
+			margin-left: 1em;
+			content: attr(data-title);
+			font-family: 'Roboto', Helvetica, sans-serif;
+			font-weight:500;
+		}
+		i.fa-close { 
+			text-align:right;
+			&:before { 
+				font: normal 500 normal 14px/1 FontAwesome, Roboto;
+				content: "menu \f00d";
+			}
+			&:after {
+				content: '';
+			}
+		}
+	}
+
+}

@@ -1,0 +1,86 @@
+/* Very simple and  useful grid width fluid widths */
+/* Use: <div class="container">
+			<div class="row">
+				<div class="half"></div><div class="one-quarter"></div><div class="one-quarter"></div>
+			</div>
+		</div>
+justconklin grid v0.1, Use it as you would like - although there are much more flexible and better grid systems out there.
+*/
+
+@gutter: 2em;
+@gutter-mobile: 1em;
+@content-width: 1120px;
+
+.container,
+.row {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.container {
+  display: block;
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+  /* transition for menu pushing content */
+  transition: ease-in .2s;
+}
+.container .row {
+  width: @content-width;
+  margin:auto;
+  padding: @gutter;
+}
+
+
+.container .whole 			{ width: 100%; float:left;}
+.container .half			{ width: 50%; float:left;}
+.container .one-third 		{ width: 33.3332%; float:left;}
+.container .two-thirds 		{ width: 66.6665%; float:left;}
+.container .one-quarter 	{ width: 25%; float:left;}
+.container .three-quarters 	{ width: 75%; float:left;}
+.container .one-fifth 		{ width: 20%; float:left;}
+.container .two-fifths 		{ width: 40%; float:left;}
+.container .three-fifths 	{ width: 60%; float:left;}
+.container .four-fifths 	{ width: 80%; float:left;}
+
+
+/* Clearfix after every .grid */
+.container {
+  *zoom: 1;
+}
+.container:before, .container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.container:after {
+  clear: both;
+}
+
+/* Respond */
+@media screen and (max-width: 568px) {
+  /* Stack anything that isn’t full-width on smaller screens */
+  .container .row {
+    width: 100% !important;
+    padding-left: @gutter-mobile;
+    padding-right: @gutter-mobile;
+  }
+  .container { 
+  	width: 100%;
+  }
+
+  /* Helper classes mobile */
+  .mobile-center {
+    text-align: center !important;
+  }
+  .mobile-hidden {
+    display: none !important;
+  }
+  .center-block { 
+  	display: block;
+  	margin: 0 auto;
+  	text-align: center;
+  }
+}
