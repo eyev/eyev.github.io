@@ -264,7 +264,7 @@ justconklin grid v0.1, Use it as you would like - although there are much more f
 aside {
   background-color: #f4f4f4;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
