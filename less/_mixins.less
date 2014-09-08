@@ -11,3 +11,12 @@
 .icon-border(@brand-color: #333) { 
 	border-right: 6px solid @brand-color;
 }
+.header-magic(@header-brand: #fff, @header-text: #333) {
+	background-color: @header-brand;
+	color: @header-text;
+	border-bottom: 7px solid lighten(@header-brand, 20%);
+}
+.stripes-pattern(@color1: #fff, @color2: #ccc) { 
+	background-color: @color1;
+	background-image: repeating-linear-gradient(-45deg, transparent, transparent 35px, @color2 35px, @color2 70px);
+}

@@ -272,7 +272,7 @@ aside {
   text-align: center;
   box-sizing: border-box;
   font-family: 'Roboto', Helvetica, sans-serif;
-  font-size: .9em;
+  font-size: .8em;
   transition: ease-in 0.2s;
 }
 aside li {
@@ -307,12 +307,14 @@ aside li.home {
 aside li.home i {
   border-right: 6px solid #607d8b;
 }
-aside li.home:hover {
+aside li.home:hover,
+aside li.home.active {
   background-position: right bottom;
   border-top: 1px solid #36474f;
   border-bottom: 1px solid #36474f;
 }
-aside li.home:hover i {
+aside li.home:hover i,
+aside li.home.active i {
   color: #f4f4f4;
 }
 aside li.portfolio {
@@ -324,12 +326,14 @@ aside li.portfolio {
 aside li.portfolio i {
   border-right: 6px solid #ff6e40;
 }
-aside li.portfolio:hover {
+aside li.portfolio:hover,
+aside li.portfolio.active {
   background-position: right bottom;
   border-top: 1px solid #d93400;
   border-bottom: 1px solid #d93400;
 }
-aside li.portfolio:hover i {
+aside li.portfolio:hover i,
+aside li.portfolio.active i {
   color: #f4f4f4;
 }
 aside li.experiments {
@@ -341,12 +345,14 @@ aside li.experiments {
 aside li.experiments i {
   border-right: 6px solid #e91e63;
 }
-aside li.experiments:hover {
+aside li.experiments:hover,
+aside li.experiments.active {
   background-position: right bottom;
   border-top: 1px solid #930e3b;
   border-bottom: 1px solid #930e3b;
 }
-aside li.experiments:hover i {
+aside li.experiments:hover i,
+aside li.experiments.active i {
   color: #f4f4f4;
 }
 aside li.resume {
@@ -358,12 +364,14 @@ aside li.resume {
 aside li.resume i {
   border-right: 6px solid #03a9f4;
 }
-aside li.resume:hover {
+aside li.resume:hover,
+aside li.resume.active {
   background-position: right bottom;
   border-top: 1px solid #02638f;
   border-bottom: 1px solid #02638f;
 }
-aside li.resume:hover i {
+aside li.resume:hover i,
+aside li.resume.active i {
   color: #f4f4f4;
 }
 aside li.contact {
@@ -375,12 +383,14 @@ aside li.contact {
 aside li.contact i {
   border-right: 6px solid #259b24;
 }
-aside li.contact:hover {
+aside li.contact:hover,
+aside li.contact.active {
   background-position: right bottom;
   border-top: 1px solid #114811;
   border-bottom: 1px solid #114811;
 }
-aside li.contact:hover i {
+aside li.contact:hover i,
+aside li.contact.active i {
   color: #f4f4f4;
 }
 aside li.social-sites {
@@ -397,12 +407,14 @@ aside li.facebook {
 aside li.facebook i {
   border-right: 6px solid #3b5998;
 }
-aside li.facebook:hover {
+aside li.facebook:hover,
+aside li.facebook.active {
   background-position: right bottom;
   border-top: 1px solid #1e2e4f;
   border-bottom: 1px solid #1e2e4f;
 }
-aside li.facebook:hover i {
+aside li.facebook:hover i,
+aside li.facebook.active i {
   color: #f4f4f4;
 }
 aside li.twitter {
@@ -414,12 +426,14 @@ aside li.twitter {
 aside li.twitter i {
   border-right: 6px solid #00aced;
 }
-aside li.twitter:hover {
+aside li.twitter:hover,
+aside li.twitter.active {
   background-position: right bottom;
   border-top: 1px solid #006287;
   border-bottom: 1px solid #006287;
 }
-aside li.twitter:hover i {
+aside li.twitter:hover i,
+aside li.twitter.active i {
   color: #f4f4f4;
 }
 aside li.linkedin {
@@ -431,12 +445,14 @@ aside li.linkedin {
 aside li.linkedin i {
   border-right: 6px solid #287bbc;
 }
-aside li.linkedin:hover {
+aside li.linkedin:hover,
+aside li.linkedin.active {
   background-position: right bottom;
   border-top: 1px solid #164468;
   border-bottom: 1px solid #164468;
 }
-aside li.linkedin:hover i {
+aside li.linkedin:hover i,
+aside li.linkedin.active i {
   color: #f4f4f4;
 }
 aside li.github {
@@ -448,12 +464,14 @@ aside li.github {
 aside li.github i {
   border-right: 6px solid #333333;
 }
-aside li.github:hover {
+aside li.github:hover,
+aside li.github.active {
   background-position: right bottom;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
 }
-aside li.github:hover i {
+aside li.github:hover i,
+aside li.github.active i {
   color: #f4f4f4;
 }
 aside li.codepen {
@@ -465,12 +483,14 @@ aside li.codepen {
 aside li.codepen i {
   border-right: 6px solid #333333;
 }
-aside li.codepen:hover {
+aside li.codepen:hover,
+aside li.codepen.active {
   background-position: right bottom;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
 }
-aside li.codepen:hover i {
+aside li.codepen:hover i,
+aside li.codepen.active i {
   color: #f4f4f4;
 }
 aside.menu-expand {
@@ -495,6 +515,25 @@ aside.menu-expand i.fa-close:before {
 }
 aside.menu-expand i.fa-close:after {
   content: '';
+}
+/* Content Styles */
+header {
+  padding-bottom: 1.5em;
+}
+header.home {
+  color: #ffffff;
+  border-bottom: 7px solid #99aeb8;
+  background-color: #607d8b;
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 35px, #5c7885 35px, #5c7885 70px);
+}
+header.home h1 {
+  color: #fff;
+}
+header.portfolio {
+  color: #ffffff;
+  border-bottom: 7px solid #ffbba6;
+  background-color: #ff6e40;
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 35px, #ff6636 35px, #ff6636 70px);
 }
 /* Font-Awesome! */
 /* FONT PATH

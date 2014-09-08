@@ -1,0 +1,16 @@
+/* Content Styles */
+@import "_mixins";
+header {
+	padding-bottom: 1.5em; 
+	&.home {
+		.header-magic(@header-brand: #607d8b, @header-text: #fff);
+		.stripes-pattern(@color1: #607d8b, @color2: darken(#607d8b, 2%));
+		h1{
+			color: #fff;
+		}
+	}
+	&.portfolio { 
+		.header-magic(@header-brand: #ff6e40, @header-text: #fff);
+		.stripes-pattern(@color1: #ff6e40, @color2: darken(#ff6e40, 2%));
+	}
+}

@@ -12,7 +12,7 @@ aside {
 	text-align: center;
 	box-sizing:border-box;
 	font-family: 'Roboto', Helvetica, sans-serif;
-	font-size: .9em;
+	font-size: .8em;
 	transition: ease-in .2s;
 	li { 
 		border-bottom: 1px solid #e6e6e6;
@@ -38,7 +38,7 @@ aside {
 		&.home {
 			.icon-branding(#607d8b);
 			i { .icon-border(#607d8b);}
-			&:hover { 
+			&:hover, &.active { 
 				 background-position:right bottom;
 				 .hover-border(#607d8b);
 				 i { color:#f4f4f4;}
@@ -47,7 +47,7 @@ aside {
 		&.portfolio {
 			.icon-branding(#ff6e40);
 			i { .icon-border(#ff6e40);}
-			&:hover { 
+			&:hover, &.active { 
 				 background-position:right bottom;
 				 .hover-border(#ff6e40);
 				 i { color:#f4f4f4;}
@@ -56,7 +56,7 @@ aside {
 		&.experiments {
 			.icon-branding(#e91e63);
 			i { .icon-border(#e91e63); }
-			&:hover { 
+			&:hover, &.active { 
 				 background-position:right bottom;
 				 .hover-border(#e91e63);
 				 i { color:#f4f4f4;}
@@ -65,7 +65,7 @@ aside {
 		&.resume {
 			.icon-branding(#03a9f4);
 			i { .icon-border(#03a9f4); }
-			&:hover { 
+			&:hover, &.active { 
 				 background-position:right bottom;
 				 .hover-border(#03a9f4);
 				 i { color:#f4f4f4;}
@@ -74,7 +74,7 @@ aside {
 		&.contact {
 			.icon-branding(#259b24);
 			i { .icon-border(#259b24); }
-			&:hover { 
+			&:hover, &.active { 
 				 background-position:right bottom;
 				 .hover-border(#259b24);
 				 i { color:#f4f4f4;}
@@ -88,7 +88,7 @@ aside {
 			.icon-branding(#3b5998);
 			border-top: 1px solid #e6e6e6;
 			i { .icon-border(#3b5998); }
-			&:hover { 
+			&:hover, &.active { 
 				 background-position:right bottom;
 				 .hover-border(#3b5998);
 				 i { color:#f4f4f4;}
@@ -97,7 +97,7 @@ aside {
 		&.twitter {
 			.icon-branding(#00aced);
 			i { .icon-border(#00aced); }
-			&:hover { 
+			&:hover, &.active { 
 				 background-position:right bottom;
 				 .hover-border(#00aced);
 				 i { color:#f4f4f4;}
@@ -106,7 +106,7 @@ aside {
 		&.linkedin {
 			.icon-branding(#287bbc);
 			i { .icon-border(#287bbc); }
-			&:hover { 
+			&:hover, &.active { 
 				 background-position:right bottom;
 				 .hover-border(#287bbc);
 				 i { color:#f4f4f4;}
@@ -115,7 +115,7 @@ aside {
 		&.github {
 			.icon-branding;
 			i { .icon-border; }
-			&:hover { 
+			&:hover, &.active { 
 				 background-position:right bottom;
 				 .hover-border;
 				 i { color:#f4f4f4;}
@@ -124,7 +124,7 @@ aside {
 		&.codepen {
 			.icon-branding;
 			i { .icon-border; }
-			&:hover { 
+			&:hover, &.active { 
 				 background-position:right bottom;
 				 .hover-border;
 				 i { color:#f4f4f4;}
